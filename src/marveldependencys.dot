@@ -93,9 +93,9 @@ digraph regexp {
     spiderman_no_way_home -> spiderman_3;
     spiderman_no_way_home -> the_amazing_spiderman_2;
     // Only aftercredits, not important for this movie
-    spiderman_no_way_home -> venom_2 [style="dashed"]
+    spiderman_no_way_home -> venom_2 [style="dashed"];
     // Only a really short appearance of Daredevil. Assumption is that all of the netflix series will become relevant in the future
-    spiderman_no_way_home -> jessica_jones_s3;
+    spiderman_no_way_home -> jessica_jones_s3 [style="dashed"];
 
     // The maguire Spidermans
     spiderman [label="Spider-Man"];
