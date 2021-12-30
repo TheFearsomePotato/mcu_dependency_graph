@@ -1,0 +1,144 @@
+digraph regexp { 
+    iron_man [label="Iron Man"];
+    the_incredible_hulk [label="The Incredible Hulk"];
+    iron_man_2 [label="Iron Man 2"];
+    thor [label="Thor"];
+    captain_america_the_first_avenger [label="Captain America: The First Avenger"];
+    marvels_the_avengers [label="Marvel's The Avengers"];
+    iron_man_3 [label="Iron Man 3"];
+    thor_the_dark_world [label="Thor: The Dark World"];
+    captain_america_the_winter_soldier [label="Captain America: The Winter Soldier"];
+    guardians_of_the_galaxy [label="Guardians of the Galaxy"];
+    avengers_age_of_ultron [label="Avengers: Age of Ultron"];
+    antman [label="Ant-Man"];
+    captain_america_civil_war [label="Captain America: Civil War"];
+    doctor_strange [label="Doctor Strange"];
+    guardians_of_the_galaxy_vol2 [label="Guardians of the Galaxy Vol. 2"];
+    spiderman_homecoming [label="Spider-Man: Homecoming"];
+    thor_ragnarok [label="Thor: Ragnarok"];
+    black_panther [label="Black Panther"];
+    avengers_infinity_war [label="Avengers: Infinity War"];
+    antman_and_the_wasp [label="Ant-Man and the Wasp"];
+    captain_marvel [label="Captain Marvel"];
+    avengers_endgame [label="Avengers: Endgame"];
+    spiderman_far_from_home [label="Spider-Man: Far From Home"];
+    black_widow [label="Black Widow"];
+    shangchi_and_the_legend_of_the_ten_rings [label="Shang-Chi and the Legend of the Ten Rings"];
+    eternals [label="Eternals"];
+    spiderman_no_way_home [label="Spider-Man: No Way Home"];
+
+    //iron_man
+    //the_incredible_hulk
+
+    iron_man_2 -> iron_man;
+
+    // thor
+    // captain_america_the_first_avenger
+
+    marvels_the_avengers -> iron_man_2;
+    marvels_the_avengers -> the_incredible_hulk;
+    marvels_the_avengers -> thor;
+    marvels_the_avengers -> captain_america_the_first_avenger;
+
+    iron_man_3 -> marvels_the_avengers;
+
+    thor_the_dark_world -> marvels_the_avengers;
+
+    captain_america_the_winter_soldier -> marvels_the_avengers;
+
+    // guardians_of_the_galaxy
+    
+    avengers_age_of_ultron -> iron_man_3;
+    avengers_age_of_ultron -> thor_the_dark_world;
+    avengers_age_of_ultron -> captain_america_the_winter_soldier;
+
+    antman -> avengers_age_of_ultron;
+
+    captain_america_civil_war -> antman;
+
+    // doctor_strange
+
+    guardians_of_the_galaxy_vol2 -> guardians_of_the_galaxy;
+
+    spiderman_homecoming -> captain_america_civil_war;
+
+    thor_ragnarok -> doctor_strange;
+    thor_ragnarok -> avengers_age_of_ultron;
+
+    black_panther -> captain_america_civil_war;
+
+    avengers_infinity_war -> thor_ragnarok;
+    avengers_infinity_war -> spiderman_homecoming;
+    avengers_infinity_war -> black_panther;
+    avengers_infinity_war -> guardians_of_the_galaxy_vol2;
+
+    antman_and_the_wasp -> avengers_infinity_war;
+
+    // captain_marvel;
+
+    avengers_endgame -> captain_marvel;
+    avengers_endgame -> antman_and_the_wasp;
+
+    spiderman_far_from_home -> avengers_endgame;
+
+    black_widow -> avengers_endgame;
+
+    shangchi_and_the_legend_of_the_ten_rings -> avengers_endgame;
+
+    //eternals;
+
+    spiderman_no_way_home -> spiderman_far_from_home;
+    spiderman_no_way_home -> spiderman_3;
+    spiderman_no_way_home -> the_amazing_spiderman_2;
+    spiderman_no_way_home -> daredevil_s3;
+
+
+    spiderman [label="Spider-Man"];
+    spiderman_2 [label="Spider-Man 2"];
+    spiderman_3 [label="Spider-Man 3"];
+    spiderman_2 -> spiderman;
+    spiderman_3 -> spiderman_2;
+
+    the_amazing_spiderman [label="The Amazing Spider-Man"];
+    the_amazing_spiderman_2 [label="The Amazing Spider-Man 2"];
+    the_amazing_spiderman_2 -> the_amazing_spiderman;
+
+    venom [label="Venom"]
+    venom_2 [label="Venom 2"]
+    venom_2 -> venom;
+
+    the_falcon_and_the_winter_soldier [label="The Falcon and the Winter Soldier S1"]
+    wandavision [label="WandaVision S1"]
+    loki [label="Loki S1"]
+    what_if [label="What If…? S1"]
+    hawkeye [label="Hawkeye S1"]
+
+    the_falcon_and_the_winter_soldier -> avengers_endgame;
+
+    wandavision -> avengers_endgame;
+
+    loki -> avengers_endgame;
+
+    what_if -> avengers_endgame;
+
+    hawkeye -> black_widow;
+    //hawkeye -> daredevil_s3;
+
+    daredevil_s1 [label="Daredevil S1"]
+    daredevil_s2 [label="Daredevil S2"]
+    daredevil_s3 [label="Daredevil S3"]
+    daredevil_s2 -> jessica_jones_s1;
+    daredevil_s3 -> daredevil_s2;
+
+    jessica_jones_s1 [label="Jessica Jones S1"];
+    jessica_jones_s1 -> daredevil_s1;
+
+    luke_cage_s1 [label="Luke Cage S1"];
+    luke_cage_s1 -> daredevil_s2;
+
+    iron_fist_s1 [label="Iron Fist S1"];
+    iron_fist_s1 -> luke_cage_s1;
+
+    the_defenders [label="The Defenders"];
+    the_defenders -> iron_fist_s1;
+}
