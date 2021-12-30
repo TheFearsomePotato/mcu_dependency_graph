@@ -1,4 +1,5 @@
 digraph regexp { 
+    // The definiton af all main movies
     iron_man [label="Iron Man"];
     the_incredible_hulk [label="The Incredible Hulk"];
     iron_man_2 [label="Iron Man 2"];
@@ -85,28 +86,35 @@ digraph regexp {
 
     shangchi_and_the_legend_of_the_ten_rings -> avengers_endgame;
 
+    // Have yet to watch eternals
     //eternals;
 
     spiderman_no_way_home -> spiderman_far_from_home;
     spiderman_no_way_home -> spiderman_3;
     spiderman_no_way_home -> the_amazing_spiderman_2;
-    spiderman_no_way_home -> daredevil_s3;
+    // Only aftercredits, not important for this movie
+    spiderman_no_way_home -> venom_2 [style="dashed"]
+    // Graph for Netflix Series not comlete
+    //spiderman_no_way_home -> daredevil_s3;
 
-
+    // The maguire Spidermans
     spiderman [label="Spider-Man"];
     spiderman_2 [label="Spider-Man 2"];
     spiderman_3 [label="Spider-Man 3"];
     spiderman_2 -> spiderman;
     spiderman_3 -> spiderman_2;
 
+    // The other spidermans
     the_amazing_spiderman [label="The Amazing Spider-Man"];
     the_amazing_spiderman_2 [label="The Amazing Spider-Man 2"];
     the_amazing_spiderman_2 -> the_amazing_spiderman;
 
+    // Venom movies
     venom [label="Venom"]
     venom_2 [label="Venom 2"]
     venom_2 -> venom;
 
+    // Disney Marvel series
     the_falcon_and_the_winter_soldier [label="The Falcon and the Winter Soldier S1"]
     wandavision [label="WandaVision S1"]
     loki [label="Loki S1"]
@@ -124,6 +132,9 @@ digraph regexp {
     hawkeye -> black_widow;
     //hawkeye -> daredevil_s3;
 
+    // Netflix Marvel Series
+    // Not watched all of them at this point
+    /*
     daredevil_s1 [label="Daredevil S1"]
     daredevil_s2 [label="Daredevil S2"]
     daredevil_s3 [label="Daredevil S3"]
@@ -131,7 +142,9 @@ digraph regexp {
     daredevil_s3 -> daredevil_s2;
 
     jessica_jones_s1 [label="Jessica Jones S1"];
+    jessica_jones_s2 [label="Jessica Jones S2"];
     jessica_jones_s1 -> daredevil_s1;
+    jessica_jones_s2 -> jessica_jones_s1;
 
     luke_cage_s1 [label="Luke Cage S1"];
     luke_cage_s1 -> daredevil_s2;
@@ -141,4 +154,5 @@ digraph regexp {
 
     the_defenders [label="The Defenders"];
     the_defenders -> iron_fist_s1;
+    */
 }
