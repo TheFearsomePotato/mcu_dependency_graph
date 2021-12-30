@@ -94,8 +94,8 @@ digraph regexp {
     spiderman_no_way_home -> the_amazing_spiderman_2;
     // Only aftercredits, not important for this movie
     spiderman_no_way_home -> venom_2 [style="dashed"]
-    // Graph for Netflix Series not comlete
-    //spiderman_no_way_home -> daredevil_s3;
+    // Only a really short appearance of Daredevil. Assumption is that all of the netflix series will become relevant in the future
+    spiderman_no_way_home -> jessica_jones_s3;
 
     // The maguire Spidermans
     spiderman [label="Spider-Man"];
@@ -134,25 +134,34 @@ digraph regexp {
 
     // Netflix Marvel Series
     // Not watched all of them at this point
-    /*
     daredevil_s1 [label="Daredevil S1"]
     daredevil_s2 [label="Daredevil S2"]
     daredevil_s3 [label="Daredevil S3"]
     daredevil_s2 -> jessica_jones_s1;
-    daredevil_s3 -> daredevil_s2;
+    daredevil_s3 -> iron_fist_s2;
 
     jessica_jones_s1 [label="Jessica Jones S1"];
     jessica_jones_s2 [label="Jessica Jones S2"];
+    jessica_jones_s3 [label="Jessica Jones S3"];
     jessica_jones_s1 -> daredevil_s1;
-    jessica_jones_s2 -> jessica_jones_s1;
+    jessica_jones_s2 -> the_punisher_s1;
+    jessica_jones_s3 -> the_punisher_s2;
 
     luke_cage_s1 [label="Luke Cage S1"];
+    luke_cage_s2 [label="Luke Cage S2"];
     luke_cage_s1 -> daredevil_s2;
+    luke_cage_s2 -> jessica_jones_s2;
 
     iron_fist_s1 [label="Iron Fist S1"];
+    iron_fist_s2 [label="Iron Fist S2"];
     iron_fist_s1 -> luke_cage_s1;
+    iron_fist_s2 -> luke_cage_s2;
 
     the_defenders [label="The Defenders"];
     the_defenders -> iron_fist_s1;
-    */
+
+    the_punisher_s1 [label="The Punisher S1"];
+    the_punisher_s2 [label="The Punisher S2"];
+    the_punisher_s1 -> the_defenders;
+    the_punisher_s2->daredevil_s3;
 }
