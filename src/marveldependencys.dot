@@ -86,8 +86,8 @@ digraph regexp {
 
     shangchi_and_the_legend_of_the_ten_rings -> avengers_endgame;
 
-    // Have yet to watch eternals
-    //eternals;
+    // assumption, Have yet to watch eternals
+    eternals -> avengers_endgame;
 
     spiderman_no_way_home -> spiderman_far_from_home;
     spiderman_no_way_home -> spiderman_3;
