@@ -6,7 +6,7 @@
         {
             "label": "Render png",
             "type": "shell",
-            "command": "dot -Tpng src/marveldependencys.dot -o ./marvel.png",
+            "command": "dot -Tpng src/marveldependencys.dot -o ./temp_mcugraph.png",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

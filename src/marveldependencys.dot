@@ -1,94 +1,112 @@
 digraph regexp { 
     // The definiton af all main movies
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     iron_man [label="Iron Man"];
+    
     the_incredible_hulk [label="The Incredible Hulk"];
+
     iron_man_2 [label="Iron Man 2"];
-    thor [label="Thor"];
-    captain_america_the_first_avenger [label="Captain America: The First Avenger"];
-    marvels_the_avengers [label="Marvel's The Avengers"];
-    iron_man_3 [label="Iron Man 3"];
-    thor_the_dark_world [label="Thor: The Dark World"];
-    captain_america_the_winter_soldier [label="Captain America: The Winter Soldier"];
-    guardians_of_the_galaxy [label="Guardians of the Galaxy"];
-    avengers_age_of_ultron [label="Avengers: Age of Ultron"];
-    antman [label="Ant-Man"];
-    captain_america_civil_war [label="Captain America: Civil War"];
-    doctor_strange [label="Doctor Strange"];
-    guardians_of_the_galaxy_vol2 [label="Guardians of the Galaxy Vol. 2"];
-    spiderman_homecoming [label="Spider-Man: Homecoming"];
-    thor_ragnarok [label="Thor: Ragnarok"];
-    black_panther [label="Black Panther"];
-    avengers_infinity_war [label="Avengers: Infinity War"];
-    antman_and_the_wasp [label="Ant-Man and the Wasp"];
-    captain_marvel [label="Captain Marvel"];
-    avengers_endgame [label="Avengers: Endgame"];
-    spiderman_far_from_home [label="Spider-Man: Far From Home"];
-    black_widow [label="Black Widow"];
-    shangchi_and_the_legend_of_the_ten_rings [label="Shang-Chi and the Legend of the Ten Rings"];
-    eternals [label="Eternals"];
-    spiderman_no_way_home [label="Spider-Man: No Way Home"];
-
-    //iron_man
-    //the_incredible_hulk
-
     iron_man_2 -> iron_man;
 
-    // thor
-    // captain_america_the_first_avenger
+    thor [label="Thor"];
 
+    captain_america_the_first_avenger [label="Captain America: The First Avenger"];
+
+    marvels_the_avengers [label="Marvel's The Avengers"];
     marvels_the_avengers -> iron_man_2;
     marvels_the_avengers -> the_incredible_hulk;
     marvels_the_avengers -> thor;
     marvels_the_avengers -> captain_america_the_first_avenger;
 
+    iron_man_3 [label="Iron Man 3"];
     iron_man_3 -> marvels_the_avengers;
 
+    thor_the_dark_world [label="Thor: The Dark World"];
     thor_the_dark_world -> marvels_the_avengers;
 
+    captain_america_the_winter_soldier [label="Captain America: The Winter Soldier"];
     captain_america_the_winter_soldier -> marvels_the_avengers;
 
-    // guardians_of_the_galaxy
+    guardians_of_the_galaxy [label="Guardians of the Galaxy"];
     
+    avengers_age_of_ultron [label="Avengers: Age of Ultron"];
     avengers_age_of_ultron -> iron_man_3;
     avengers_age_of_ultron -> thor_the_dark_world;
     avengers_age_of_ultron -> captain_america_the_winter_soldier;
 
+    antman [label="Ant-Man"];
     antman -> avengers_age_of_ultron;
 
+    captain_america_civil_war [label="Captain America: Civil War"];
     captain_america_civil_war -> antman;
 
-    // doctor_strange
+    doctor_strange [label="Doctor Strange"];
 
+    guardians_of_the_galaxy_vol2 [label="Guardians of the Galaxy Vol. 2"];
     guardians_of_the_galaxy_vol2 -> guardians_of_the_galaxy;
 
+    spiderman_homecoming [label="Spider-Man: Homecoming"];
     spiderman_homecoming -> captain_america_civil_war;
 
+    thor_ragnarok [label="Thor: Ragnarok"];
     thor_ragnarok -> doctor_strange;
     thor_ragnarok -> avengers_age_of_ultron;
 
+    black_panther [label="Black Panther"];
     black_panther -> captain_america_civil_war;
 
+    avengers_infinity_war [label="Avengers: Infinity War"];
     avengers_infinity_war -> thor_ragnarok;
     avengers_infinity_war -> spiderman_homecoming;
     avengers_infinity_war -> black_panther;
     avengers_infinity_war -> guardians_of_the_galaxy_vol2;
 
+    antman_and_the_wasp [label="Ant-Man and the Wasp"];
     antman_and_the_wasp -> avengers_infinity_war;
 
-    // captain_marvel;
+    captain_marvel [label="Captain Marvel"];
 
+    avengers_endgame [label="Avengers: Endgame"];
     avengers_endgame -> captain_marvel;
     avengers_endgame -> antman_and_the_wasp;
 
+    spiderman_far_from_home [label="Spider-Man: Far From Home"];
     spiderman_far_from_home -> avengers_endgame;
 
+    black_widow [label="Black Widow"];
     black_widow -> avengers_endgame;
 
+    shangchi_and_the_legend_of_the_ten_rings [label="Shang-Chi and the Legend of the Ten Rings"];
     shangchi_and_the_legend_of_the_ten_rings -> avengers_endgame;
 
+    eternals [label="Eternals"];
     // assumption, Have yet to watch eternals
     eternals -> avengers_endgame;
 
+    spiderman_no_way_home [label="Spider-Man: No Way Home"];
     spiderman_no_way_home -> spiderman_far_from_home;
     spiderman_no_way_home -> spiderman_3;
     spiderman_no_way_home -> the_amazing_spiderman_2;
@@ -116,19 +134,18 @@ digraph regexp {
 
     // Disney Marvel series
     the_falcon_and_the_winter_soldier [label="The Falcon and the Winter Soldier S1"]
-    wandavision [label="WandaVision S1"]
-    loki [label="Loki S1"]
-    what_if [label="What If…? S1"]
-    hawkeye [label="Hawkeye S1"]
-
     the_falcon_and_the_winter_soldier -> avengers_endgame;
 
+    wandavision [label="WandaVision S1"]
     wandavision -> avengers_endgame;
 
+    loki [label="Loki S1"]
     loki -> avengers_endgame;
 
+    what_if [label="What If…? S1"]
     what_if -> avengers_endgame;
 
+    hawkeye [label="Hawkeye S1"]
     hawkeye -> black_widow;
     //hawkeye -> daredevil_s3;
 
@@ -137,6 +154,7 @@ digraph regexp {
     daredevil_s1 [label="Daredevil S1"]
     daredevil_s2 [label="Daredevil S2"]
     daredevil_s3 [label="Daredevil S3"]
+    daredevil_s1 -> marvels_the_avengers [style="dashed"];
     daredevil_s2 -> jessica_jones_s1;
     daredevil_s3 -> iron_fist_s2;
 
@@ -163,5 +181,5 @@ digraph regexp {
     the_punisher_s1 [label="The Punisher S1"];
     the_punisher_s2 [label="The Punisher S2"];
     the_punisher_s1 -> the_defenders;
-    the_punisher_s2->daredevil_s3;
-}
+    the_punisher_s2 ->daredevil_s3;
+} 

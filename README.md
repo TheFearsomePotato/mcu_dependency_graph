@@ -4,6 +4,8 @@
 This is a [dependency graph](https://en.wikipedia.org/wiki/Dependency_graph) that trys to make sense of the movies and series of the Marvel Cinematic Universe. If you want to watch a movie or series, find it on the graph and follow every outgoing arrow from it. If you have watched all of the nodes pointed to from the one you want to watch, you are ready to enjoy it.
 If you didn't watch a movie or series, you should watch it first (but look up if you have watched its dependencys).
 
+The dashed arrows show "soft" dependencys. If characters appear in short scenes or in after credits scenes that aren't really
+important for the main plot, they don't need to be watched.
 ## Why is this?
 The MCU is growing ever faster and bigger. At this point its hard to create the "one" watch order or keep it in your head. This graph tries to make it easier.
 
