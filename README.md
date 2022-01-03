@@ -17,4 +17,5 @@ This was (sadly) created on Windows. Install graphviz, and execute the build tas
 
 ## How to contribute?
 The creation of this graph is still in progress and it might include errors. If you have any suggestions to improve it, feel free to create issues. Please do not spoil anything. Help for the styling or the structure of the project is greatly appreciated as well.
+
 I have no clue how to properly host a puplic repo, so this is somewhat a learning experience for me.
