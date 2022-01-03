@@ -1,5 +1,5 @@
 # mcu_dependency_graph
-![MCU Dependency Graph](/marvel.png)
+![MCU Dependency Graph](/mcugraph.png)
 ## What is this?
 This is a [dependency graph](https://en.wikipedia.org/wiki/Dependency_graph) that trys to make sense of the movies and series of the Marvel Cinematic Universe. If you want to watch a movie or series, find it on the graph and follow every outgoing arrow from it. If you have watched all of the nodes pointed to from the one you want to watch, you are ready to enjoy it.
 If you didn't watch a movie or series, you should watch it first (but look up if you have watched its dependencys).
