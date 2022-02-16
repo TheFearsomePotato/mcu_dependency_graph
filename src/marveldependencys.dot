@@ -1,29 +1,4 @@
-digraph regexp { 
-    // The definiton af all main movies
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+digraph regexp {
     iron_man [label="Iron Man"];
     
     the_incredible_hulk [label="The Incredible Hulk"];
